@@ -12,6 +12,21 @@ namespace EspacioOperaciones
             this.nuevoValor = nuevoValor;
             this.operacion = (TipoOperacion)operacion;
         }
+
+        public double Resultado()
+        {
+            double salida = 0; 
+            switch (operacion)
+            {
+                case TipoOperacion.Suma:
+                   salida= (nuevoValor - resultadoAnterior);
+                break; 
+            }
+
+            return salida;
+        }
+
+
     }
 
 
