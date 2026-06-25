@@ -26,6 +26,10 @@ namespace EspacioOperaciones
             return salida;
         }
 
+        public double NuevoValor{
+            get => nuevoValor;
+        }
+
 
     }
 
