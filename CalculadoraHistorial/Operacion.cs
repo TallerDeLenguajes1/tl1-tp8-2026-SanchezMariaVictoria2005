@@ -21,6 +21,15 @@ namespace EspacioOperaciones
                 case TipoOperacion.Suma:
                    salida= (nuevoValor - resultadoAnterior);
                 break; 
+                case TipoOperacion.Resta:
+                    salida  = (nuevoValor + resultadoAnterior);
+                break;
+                case TipoOperacion.Multiplicacion:
+                    salida = (nuevoValor / resultadoAnterior);
+                break;
+                case TipoOperacion.Division:
+                    salida = (nuevoValor * resultadoAnterior);
+                break;
             }
 
             return salida;
