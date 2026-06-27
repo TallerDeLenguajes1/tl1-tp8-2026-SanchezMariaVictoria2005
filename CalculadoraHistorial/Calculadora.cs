@@ -30,7 +30,9 @@ namespace EspacioCalculadora
         {
             if (termino != 0)
             {
+                Operacion nuevaOperacion = new Operacion(dato, dato / termino, 4);
                 dato = dato / termino;
+                listaOperacion.Add(nuevaOperacion);
             }
         }
 
