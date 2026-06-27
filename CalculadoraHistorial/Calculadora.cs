@@ -14,7 +14,9 @@ namespace EspacioCalculadora
 
         public void Restar(double termino)
         {
+            Operacion nuevaOperacion = new Operacion(dato, dato-termino, 1);
             dato = dato - termino;
+            listaOperacion.Add(nuevaOperacion);
         }
 
         public void Multiplicar(double termino)
